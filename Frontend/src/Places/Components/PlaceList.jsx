@@ -1,3 +1,4 @@
+import { } from 'react';
 import { Link } from 'react-router-dom';
 
 import './PlaceList.css'
@@ -5,13 +6,12 @@ import PlaceItem from './PlaceItem';
 import Card from '../../Shared/Components/UIELements/Card';
 import Button from '../../Shared/Components/FormElements/Button';
 
-
 const PlaceList = props =>{
     if(props.items.length==0){
         return (<div className='place-list center'>
             <Card>
                 <h3>No Places Found. Maybe Create new one?</h3>
-                <Button inverse>Share Place</Button>
+                <Button to ="/place/new" inverse>Share Place</Button>
             </Card>
             </div>
         );
